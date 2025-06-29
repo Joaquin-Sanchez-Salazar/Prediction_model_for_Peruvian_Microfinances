@@ -2,7 +2,7 @@
 Repositorio de Github con las abses de datos usadas, y los scripts de python para 1) pre procesar los datos, 2) El entrenamiento y validación del modelo ANN, 3) Entrenamiento y validación del modelo CNN.
 A continuación una breve expicación del repositorio:
 
-"Dataset IA" es una carpeta que contiene todos los dataset utilizados organizados por año.
+"Dataset IA" es una carpeta que contiene todos los dataset utilizados organizados por año. Se encuentra en el tag v1.0.0 y está en formato zip
 
 "Main.ipynb" es un cuaderno de Python que contiene la valicadión  entrenaiento del modelo ANN.
 
