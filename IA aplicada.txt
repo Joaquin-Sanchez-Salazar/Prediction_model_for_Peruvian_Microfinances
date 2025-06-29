@@ -1,0 +1,49 @@
+	IA aplicada
+
+Mating pool: cruzamiento de "matrices" (cromosomas) para generar bloques con lo mejor de ambas soluciones y mejorar el fitness
+Si es entre mas de 2 matrices es multipadle 
+
+Representación binaria
+De cromosoma (Matriz) obtenemos genes (atributos) y los alelos son los valores de un gen
+
+La base de datos puede ser una matriz compuesta, porque los sitemas están optimizados para menajear datos hacia abajo (columnas) no hacia los lados. Por eso cuando hay muchas mas variables que observaciones se transpone
+
+Funcion de densidad de probabilidad: el área es 1
+
+Perason normaliza a 1 y pone offset 0. De esta forma no importa ni la escala ni la media, solo el comportamiento de las variables
+
+PCA busca el sistema de espacios en el que la variabilidad (varianza) de datos sea máxima en su proyección, puede no ser la mejor opción para discriminar clases
+
+Proyección de a en b es ortogonal y viceversa.
+La matriz de proyección utiliza que todas sus proyecciones sean ortogonales entre si y su transpuesta sea la matriz identidad (y vectores unitarios)
+La primera coordenada siempre proyecta la máxima varianza
+PCA no se preocupa e discriminancia, solo de varianza, así que puede eliminar ciertos datos relevantes
+La matriz de PCA es la matriz Q
+Standarizer -> PCA (Q) -> Model
+Recomendable hacer el fit y luego la transformación (PCA integrada en Python no hace eso)
+Complemento ortogonal es en una dimensión menos
+Una matriz identidad es descorrelacionada, no hay relación entre las variables (muy poco probable que exista en la vida real)
+Los autovectores son las varianzas capturadas. Son un cojunto ee datos del cual se scoge el mayor
+Plotline sirve para rotar las imágenes tridimensionales xd
+
+Bootstrapping muestra algunas muestras hasta completar el tamaño original de la data y las muestras que no se repitieron (no salieron) se usan como test
+
+Con validación cruzada estimas la media y la deviación estándar con más certeza. Certificas la robustez del modelo
+El 0o sirve como offset, se puede quitar si se estandariza la data
+A un modelo KNN se le tiene que escalar y estandarizar
+
+
+En desicion tress mucho dept genera overfitting
+Clasificacion funciona mejor que regresion porque las m´tricas acompñan, ya que la variacion no es un problema pues hay un rango de vlores válidos. Se debe considerar el sesgo adecuado ára utilizar el modelo correcto
+balanced-accuracy sirve cuando la data de tu modelo es muy desbalanceada y tu matriz de confusion no funciona bien. Ejm: una data con 1000 No y 10 Si, con un modelo que siempre da No da acurracy 1000/1010=99% y recall No de 1, lo cual es muy sesgado
+Con los arboles de clasificacion se puede meclar variables numericas y categoricas pues solo se separa los espacios (los clasifica)
+
+Para un decisión tree da igual si la data esta escalada o no (igual toma la decisión) es mas, se puede unir data categorica y numérica. Es uno de los pocos modelos mixtos
+
+Las redes neuronales tienen outputs lineales, sin embargo si se modifica la función de activación se vuelve no lineal, se pueden utilizar múltiples neuronas
+
+En clasificación se enseña en base a probabilidades (sus targets están entre 0 y 1)
+
+Backpropagation utiliza el error cuadrado llevándolo hacia atrás a los x. Luego se determina cuanto atribuye cada parámetro al error con la derivada del parámetro con respecto al error o viceversa. Si la derivdad es 0 el parámetro no aporta nada, si es 10 aporta mucho (es bastante sensible a los cambios). El vector con derivadas es el gradiente (todas las sensibilidades con respecto a la capa)
+
+Se usan batches de 32, 64, 128 muestras para el backprojection del error
