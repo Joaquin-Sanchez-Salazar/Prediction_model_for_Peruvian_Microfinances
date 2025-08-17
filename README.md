@@ -4,13 +4,13 @@ This repository contains the datasets and Python scripts developed to build, tra
 
 The project includes:
 
-Data preprocessing.
+## Data preprocessing.
 
 Training and validation of an Artificial Neural Network (ANN) model.
 
 Training and validation of a Convolutional Neural Network (CNN) model.
 
-Repository Structure
+## Repository Structure
 
 Dataset IA
 A folder containing all datasets used in this project, organized by year.
@@ -37,7 +37,7 @@ Saved models generated during training.
 
 ANN_uni_mejor_modelo.keras: the best-performing ANN model to date.
 
-Requirements & Installation
+## Requirements & Installation
 
 Clone the repository:
 
@@ -56,7 +56,7 @@ Install dependencies:
 
 pip install -r requirements.txt
 
-Usage
+## Usage
 
 Run Pre-procesamiento.ipynb to preprocess the raw datasets and generate the final dataframe.
 
@@ -64,7 +64,7 @@ Use Main.ipynb to train and validate the ANN model.
 
 Use CNN_test.ipynb to train and validate the CNN model.
 
-Notes
+## Notes
 
 The datasets are not included directly in the repository for storage efficiency. Please download them from the release section (v1.0.0).
 
