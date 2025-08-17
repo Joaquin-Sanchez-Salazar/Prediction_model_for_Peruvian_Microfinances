@@ -1,17 +1,71 @@
-# TA_IA_aplicada_grupo2
-Repositorio de Github con las abses de datos usadas, y los scripts de python para 1) pre procesar los datos, 2) El entrenamiento y validación del modelo ANN, 3) Entrenamiento y validación del modelo CNN.
-A continuación una breve expicación del repositorio:
+Prediction Model for Peruvian Microfinances
 
-"Dataset IA" es una carpeta que contiene todos los dataset utilizados organizados por año. Se encuentra en el tag v1.0.0 y está en formato zip
+This repository contains the datasets and Python scripts developed to build, train, and validate machine learning models for predicting outcomes in the Peruvian microfinance sector.
 
-"Main.ipynb" es un cuaderno de Python que contiene la valicadión  entrenaiento del modelo ANN.
+The project includes:
 
-"CNN_test.ipynb" es un cuaderno de Python con las pruebas de entrenamiento y validación de un segundo modelo, CNN.
+Data preprocessing.
 
-"Pre-procesamiento.ipynb" es un cuaderno de Python con el pre-procesmaiento realizado a los datsets iniciales para obtener el dataframe final.
+Training and validation of an Artificial Neural Network (ANN) model.
 
-"df_modelo_final" es el dataframe obtenido en "Pre-procesamiento.ipynb" y usado por los modelos.
+Training and validation of a Convolutional Neural Network (CNN) model.
 
-"requirements.txt" contiene los requirements para el modelo ANN.
+Repository Structure
 
-El resto de archivos contiene a los modelos guardados, mientras que "ANN_uni_mejor_modelo.keras" contiene al mejor modelo de ANN hasta la fecha.
+Dataset IA
+A folder containing all datasets used in this project, organized by year.
+
+Available in release tag v1.0.0 as a compressed .zip file.
+
+Main.ipynb
+Jupyter Notebook for training and validating the ANN model.
+
+CNN_test.ipynb
+Jupyter Notebook for training and validating the CNN model.
+
+Pre-procesamiento.ipynb
+Jupyter Notebook for data preprocessing, transforming the raw datasets into a cleaned and structured dataframe for modeling.
+
+df_modelo_final
+The final processed dataframe generated in Pre-procesamiento.ipynb, used as input for both models.
+
+requirements.txt
+List of required Python packages and dependencies for running the ANN model.
+
+Model files
+Saved models generated during training.
+
+ANN_uni_mejor_modelo.keras: the best-performing ANN model to date.
+
+Requirements & Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/Prediction_model_for_Peruvian_Microfinances.git
+cd Prediction_model_for_Peruvian_Microfinances
+
+
+Create and activate a virtual environment (recommended):
+
+python -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Usage
+
+Run Pre-procesamiento.ipynb to preprocess the raw datasets and generate the final dataframe.
+
+Use Main.ipynb to train and validate the ANN model.
+
+Use CNN_test.ipynb to train and validate the CNN model.
+
+Notes
+
+The datasets are not included directly in the repository for storage efficiency. Please download them from the release section (v1.0.0).
+
+The ANN and CNN models were developed and evaluated for research purposes in the context of Peruvian microfinance prediction.
