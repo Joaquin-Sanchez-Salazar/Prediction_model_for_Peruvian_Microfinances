@@ -57,5 +57,5 @@ The project includes:
 3. Use CNN_test.ipynb to train and validate the CNN model.
 
 ## Notes
--The datasets are not included directly in the repository for storage efficiency. Please download them from the release section (v1.0.0).
--The ANN and CNN models were developed and evaluated for research purposes in the context of Peruvian microfinance prediction.
+- The datasets are not included directly in the repository for storage efficiency. Please download them from the release section (v1.0.0).
+- The ANN and CNN models were developed and evaluated for research purposes in the context of Peruvian microfinance prediction.
