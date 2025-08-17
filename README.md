@@ -1,4 +1,4 @@
-Prediction Model for Peruvian Microfinances
+# Prediction Model for Peruvian Microfinances
 
 This repository contains the datasets and Python scripts developed to build, train, and validate machine learning models for predicting outcomes in the Peruvian microfinance sector.
 
